@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Basics</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/index.css')}}">
-</head>
-<body>
-    <div class="container">
-        <div id="box">Hello {{name}}</div>
-    </div>
-</body>
-</html>
+{% extends "./layout.html" %} 
+
+{% block content %}
+<div class="container">
+    <div id="box">Hi, I am {{name}}</div>
+</div>
+{% endblock %}
+
+
